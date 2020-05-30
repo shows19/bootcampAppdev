@@ -23,10 +23,10 @@ jobs:
     
     # Runs command using the runners shell
     - name: install surge
-    - run: npm install -g surge
+      run: npm install -g surge
     
     # Deploy to surge using auth token saved in settings -> secrets
     - name: deploy to surge
-    - run: surge ./ bootcamp_AppDev_slucky.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./ bootcamp_AppDev_slucky.surge.sh --token ${{ secrets.SURGE_TOKEN }}
     
   
